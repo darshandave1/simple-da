@@ -1,0 +1,54 @@
+{
+    "products": [
+        {
+            "name": "simple-da-no-resources",
+            "label": "Simple DA",
+            "product_kind": "solution",
+            "tags": [ ],
+            "keywords": [ ],
+            "short_description": "This is a simple Terraform DA.  It does not create any resources.",
+            "long_description": "A simple terraform DA that has a single input and single output.",
+            "offering_docs_url": "https://github.com/darshandave1/simple-da",
+            "offering_icon_url": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIGZpbGw9IiMwMDAwMDAiIGhlaWdodD0iODAwcHgiIHdpZHRoPSI4MDBweCIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiANCgkgdmlld0JveD0iMCAwIDU4Ljg1NCA1OC44NTQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZD0iTTIuMDAxLDI0LjExYy0wLjA0NS0wLjA0NC0wLjA3LTAuMDc2LTAuMDU3LTAuMDgzQzEuOTM2LDIzLjk5NCwxLjk2MSwyNC4wMzcsMi4wMDEsMjQuMTF6IE01Ni45MDIsMjQuMDI3DQoJYzAuMDA4LTAuMDMyLTAuMDE3LDAuMDEtMC4wNTcsMC4wODNDNTYuODksMjQuMDY2LDU2LjkxNiwyNC4wMzQsNTYuOTAyLDI0LjAyN3ogTTU4LjA4MiwyMi40ODgNCgljLTAuNzkxLTAuNTk4LTEuODY4LTAuNTUzLTIuNTc2LDAuMTM5Yy0wLjY2NSwwLjUzNS00LjY5MywyLjczNy04LjI4NywyLjQ1NWMtNS4yNDctMC40MDQtOC4zOTktNi4wNzQtMTMuNTA1LTYuMDc0DQoJYy0xLjYwNiwwLTMuMDg2LDAuNTczLTQuMjksMS42MjVjLTEuMjA1LTEuMDUyLTIuNjg0LTEuNjI1LTQuMjktMS42MjVjLTUuMTgzLDAtOC4yNjEsNS42NTktMTMuNTA2LDYuMDc0DQoJYy0zLjU3MywwLjI4Mi03LjYyNS0xLjkyMi04LjIyOC0yLjRjLTAuNzA4LTAuNjkyLTEuODE3LTAuNzY0LTIuNjA2LTAuMTY2Yy0wLjc5LDAuNTk4LTEuMDIzLDEuNjg0LTAuNTQ5LDIuNTUzbDAuMTA1LDAuMTk4DQoJYzMuNDYxLDYuNTg3LDcuMDM0LDkuNzA5LDkuNDUzLDExLjE3M2MyLjk0LDIuMTY3LDYuODM2LDMuNDA3LDEwLjcwNSwzLjQwN2MxLjMyNCwwLDQuNTI0LTAuMTc0LDYuMzA3LTEuNzQzDQoJYzAuOTctMC42NDMsMS44NTEtMS40ODksMi42MDgtMi40OTRjMC43NTcsMS4wMDUsMS42MzksMS44NTEsMi42MDgsMi40OTRjMS43ODIsMS41NjksNC45ODEsMS43NDMsNi4zMDYsMS43NDMNCgljMy44NjksMCw3Ljc2NS0xLjI0MSwxMC43MDUtMy40MDdjMy40NC0yLjA4Miw2LjcwOS01Ljk0NCw5LjQ1Ni0xMS4xNzlsMC4xMDQtMC4xOTRDNTkuMDc1LDI0LjE5Nyw1OC44NzEsMjMuMDg1LDU4LjA4MiwyMi40ODh6Ii8+DQo8L3N2Zz4=",
+            "flavors": [ 
+                {
+                    "name": "standard",
+                    "label": "standard",
+                    "install_type": "fullstack",
+                    "working_directory": "./",
+                    "compliance": {},
+                    "iam_permissions": [
+                        {
+                            "service_name": "is.vpc",
+                            "role_crns": [
+                                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                                "crn:v1:bluemix:public:iam::::role:Administrator"
+                            ]
+                        }
+                    ],
+                    "architecture": {
+                        "diagrams": [
+                            {
+                                "diagram": {
+                                    "caption": "A simple DA with an input and output.",
+                                    "url_proxy": {
+                                        "url": "https://github.com/darshandave1/simple-da/blob/main/diagram/simple-da.svg"
+                                    }
+                                },
+                                "description": "A description of this diagram.  It is more detailed than a caption."
+                            }
+                        ]
+                    },
+                    "dependency_version_2": true,
+                    "configuration": [
+                        {
+                            "key": "prefix",
+                            "type": "string",
+                            "required": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
