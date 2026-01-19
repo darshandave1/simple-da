@@ -18,10 +18,6 @@
           "install_type": "fullstack",
           "working_directory": "./",
           "dependency_version_2": true,
-          "environment_variables": {
-            "name": "TF_LOG",
-            "value": "DEBUG"
-          },
           "architecture": {
             "diagrams": [
               {
@@ -48,6 +44,12 @@
               "type": "string",
               "required": true,
               "hidden": false
+            }
+          ],
+          "environment_variables": [
+            {
+              "key": "TF_LOG",
+              "value": "DEBUG"
             }
           ]
         }
