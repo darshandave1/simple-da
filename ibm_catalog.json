@@ -18,41 +18,10 @@
           "install_type": "fullstack",
           "working_directory": "./",
           "dependency_version_2": true,
-          "architecture": {
-            "diagrams": [
-              {
-                "diagram": {
-                  "caption": "A simple DA with an input and output.",
-                  "url": "https://raw.githubusercontent.com/darshandave1/simple-da/main/diagram/simple-da.svg"
-                },
-                "description": "A description of this diagram. It is more detailed than a caption."
-              }
-            ]
+          "environment_variables": {
+            "name": "TF_LOG",
+            "value": "DEBUG"
           },
-          "iam_permissions": [
-            {
-              "service_name": "is.vpc",
-              "role_crns": [
-                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-                "crn:v1:bluemix:public:iam::::role:Administrator"
-              ]
-            }
-          ],
-          "configuration": [
-            {
-              "key": "prefix",
-              "type": "string",
-              "required": true,
-              "hidden": false
-            }
-          ]
-        },
-        {
-          "name": "standard",
-          "label": "standard",
-          "install_type": "fullstack",
-          "working_directory": "./",
-          "dependency_version_2": true,
           "architecture": {
             "diagrams": [
               {
