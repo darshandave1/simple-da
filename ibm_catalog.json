@@ -46,20 +46,10 @@
               "hidden": false
             }
           ],
-          "schematics_env_values": [
-            {
-              "name": "TF_LOG",
-              "value": "TRACE",
-              "secure": true,
-              "hidden": true
-            },
-            {
-              "key": "TF_IGNORE",
-              "value": "TRACE",
-              "secure": false,
-              "hidden": false
-            }
-          ]
+          "schematics_env_values": {
+            "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]",
+            "sm_ref": "cmsm_v1:{\"name\": \"envVarSecret\",\"id\":\"1234567890\",\"service_id\":\"crn:v1:bluemix:public:secrets-manager:eu-gb:a/1234567890:1234567890::\",\"service_name\":\"My SM instance\",\"group_id\":\"1234567890\",\"group_name\":\"My SM group\",\"resource_group_id\":\"1234567890\",\"region\":\"eu-gb\",\"type\":\"arbitrary\"}"
+          }
         }
       ]
     }
