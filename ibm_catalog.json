@@ -46,10 +46,18 @@
               "hidden": false
             }
           ],
-          "environment_variables": [
+          "schematics_env_values": [
             {
-              "key": "TF_LOG",
-              "value": "DEBUG"
+              "name": "TF_LOG",
+              "value": "TRACE",
+              "secure": true,
+              "hidden": true
+            },
+            {
+              "key": "TF_IGNORE",
+              "value": "TRACE",
+              "secure": false,
+              "hidden": false
             }
           ]
         }
