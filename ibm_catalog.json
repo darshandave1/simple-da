@@ -13,7 +13,7 @@
       "offering_icon_url": "https://raw.githubusercontent.com/darshandave1/simple-da/main/diagram/simple-da.svg",
       "flavors": [
         {
-          "name": "standard",
+          "name": "Standard(with-env)",
           "label": "standard",
           "install_type": "fullstack",
           "working_directory": "./",
@@ -49,6 +49,41 @@
           "schematics_env_values": {
             "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
           }
+        },
+        {
+          "name": "Standard(No-env)",
+          "label": "standard",
+          "install_type": "fullstack",
+          "working_directory": "./",
+          "dependency_version_2": true,
+          "architecture": {
+            "diagrams": [
+              {
+                "diagram": {
+                  "caption": "A simple DA with an input and output.",
+                  "url": "https://raw.githubusercontent.com/darshandave1/simple-da/main/diagram/simple-da.svg"
+                },
+                "description": "A description of this diagram. It is more detailed than a caption."
+              }
+            ]
+          },
+          "iam_permissions": [
+            {
+              "service_name": "is.vpc",
+              "role_crns": [
+                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "crn:v1:bluemix:public:iam::::role:Administrator"
+              ]
+            }
+          ],
+          "configuration": [
+            {
+              "key": "prefix",
+              "type": "string",
+              "required": true,
+              "hidden": false
+            }
+          ]
         }
       ]
     }
