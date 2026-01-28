@@ -13,7 +13,7 @@
       "offering_icon_url": "https://raw.githubusercontent.com/darshandave1/simple-da/main/diagram/simple-da.svg",
       "flavors": [
         {
-          "name": "Standard(with-env)",
+          "name": "standard",
           "label": "standard",
           "install_type": "fullstack",
           "working_directory": "./",
@@ -47,43 +47,8 @@
             }
           ],
           "schematics_env_values": {
-            "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
+              "sm_ref": "cmsm_v1:{\"name\":\"Schematics_env_var\",\"id\":\"a0416a47-cd08-5a17-828e-a9ce0f3aa5d2\",\"service_id\":\"crn:v1:staging:public:secrets-manager:eu-gb:a/122bf72200ab4857a5512a051ac7c95e:c2dc4762-4ec5-4030-878f-cb97ef753f0f::\",\"service_name\":\"Secrets Manager-wk\",\"group_id\":\"default\",\"group_name\":\"default\",\"resource_group_id\":\"dc6feec225834055a7daf525466066d9\",\"region\":\"eu-gb\",\"type\":\"arbitrary\"}"
           }
-        },
-        {
-          "name": "Standard(No-env)",
-          "label": "standard",
-          "install_type": "fullstack",
-          "working_directory": "./",
-          "dependency_version_2": true,
-          "architecture": {
-            "diagrams": [
-              {
-                "diagram": {
-                  "caption": "A simple DA with an input and output.",
-                  "url": "https://raw.githubusercontent.com/darshandave1/simple-da/main/diagram/simple-da.svg"
-                },
-                "description": "A description of this diagram. It is more detailed than a caption."
-              }
-            ]
-          },
-          "iam_permissions": [
-            {
-              "service_name": "is.vpc",
-              "role_crns": [
-                "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-                "crn:v1:bluemix:public:iam::::role:Administrator"
-              ]
-            }
-          ],
-          "configuration": [
-            {
-              "key": "prefix",
-              "type": "string",
-              "required": true,
-              "hidden": false
-            }
-          ]
         }
       ]
     }
