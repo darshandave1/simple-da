@@ -47,7 +47,7 @@
             }
           ],
           "schematics_env_values": {
-            "sm_ref": "cmsm_v1:{\"name\":\"dd-env\",\"id\":\"e42e8891-a57f-8c35-123f-b46ee4487772\",\"service_id\":\"crn:v1:staging:public:secrets-manager:eu-gb:a/122bf72200ab4857a5512a051ac7c95e:c2dc4762-4ec5-4030-878f-cb97ef753f0f::\",\"service_name\":\"Secrets Manager-wk\",\"group_id\":\"6e38d268-d57d-ea94-82e8-5083664dd7c6\",\"group_name\":\"dd-pass\",\"resource_group_id\":\"dc6feec225834055a7daf525466066d9\",\"region\":\"eu-gb\",\"type\":\"arbitrary\"}"
+            "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
           }
         }
       ]
