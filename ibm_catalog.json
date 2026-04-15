@@ -45,7 +45,10 @@
               "required": true,
               "hidden": false
             }
-          ]
+          ],
+          "schematics_env_values": {
+            "value": "[{\"name\": \"TF_LOG\",\"value\": \"TRACE\",\"secure\": true,\"hidden\": true},{\"name\": \"TF_IGNORE\",\"value\": \"TRACE\",\"secure\": false,\"hidden\": false}]"
+          }
         }
       ]
     }
